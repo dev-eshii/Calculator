@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header_text{
+    position: relative;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 350%;
+    transition: color 0.3s, transform 0.1s;
+}
+
+.header_text:hover{
+    color: #f55c5c;
+    
+}
+
+.calculator {
+    width: 320px; /* Adjust width as needed */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    text-align: right;
+    font-size: 2em;
+    box-sizing: border-box;
+    background-color: #eee;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    margin: 2%;
+
+}
+
+.btn {
+    border: #eee;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 5px;
+    height: 60px; /* Ensure uniform button sizes */
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    background-color: #ccc;
+    transform: scale(0.98);
+}
+
+.equals {
+    background-color: #f76c6c;
+    color: #fff;
+    grid-column: span 3; /* Span across three columns */
+}
+
+.equals:hover {
+    background-color: #f55c5c;
+}
+
+.zero {
+    grid-column: span 2; /* Span across two columns */
+}
+
+.btn:last-child {
+    grid-column: span 1; /* Ensures '.' button is aligned properly */
+}
+
+
+
+
+
+
+
+
